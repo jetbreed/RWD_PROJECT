@@ -5,6 +5,88 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RWD Intro</title>
+
+    <style>
+        html
+        {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .header
+        {
+            background-color: #0000ff;
+            color: #fff;
+            padding: 15px;
+        }
+
+        .menu
+        {
+            background-color: #fff;
+            /* background-image: url(img/kid-code6.jpg);
+            background-repeat: no-repeat; */
+        }
+
+        .menu ul
+        {
+            /* background-color: #fff; */
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu li
+        {
+            padding: 8px;
+            margin-bottom: 7px;
+            background-color: #0000ff;
+            color: #fff;
+            /* box-shadow: 0px 1px 2px 2px #0000ff; */
+            box-shadow: 0 1px 3px rgba(0,0,0,0.232), 
+            0 1px 2px rgba(0,0,0,0.24);
+            /* background-color: rgb(0, 0, 0); */
+            /* background-color: rgba(0,0,0,0); */
+        }
+        
+        .nav
+        {
+            width: 100%;
+        }
+        .nav ul
+        {
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .nav ul li
+        {
+            width: 100%;
+            text-align: center;
+        }
+        
+        .nav li:hover
+        {
+            background: #fff;
+            color: #0000ff;
+        }
+
+        .footer
+        {
+            background-color: #0000ff;
+            color: #fff;
+            text-align: center;
+            font-size: 12px;
+            padding: 15px;
+        }
+
+        @media screen and (min-width: 600px)
+        {
+            .col-s-3
+            {
+                width: 25%;
+            }            
+        }
+    </style>
+
 </head>
 <body>
     <div class="header">
@@ -12,6 +94,16 @@
     </div>
 
     <div class="row">
+        <div class="menu nav">
+            <ul>
+                <li style="float: left;">HOME</li>
+                <li>ABOUT US</li>
+                <li>SERVICES</li>
+                <li>CONTACT US</li>
+                <li>MY PROFILE</li>
+            </ul>
+        </div>
+
         <div class="col-3 col-s-3 menu">
             <ul>
                 <li>HOME</li>
