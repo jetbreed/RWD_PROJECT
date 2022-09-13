@@ -17,10 +17,15 @@
             background-color: #0000ff;
             color: #fff;
             padding: 15px;
+            background-image: url(img/kid-code6.jpg);
+            /* background-repeat: no-repeat; */
+            width: 100%;
+            margin-right:15px;
         }
 
         .menu
         {
+            width: 92%;
             background-color: #fff;
             /* background-image: url(img/kid-code6.jpg);
             background-repeat: no-repeat; */
@@ -76,6 +81,7 @@
             text-align: center;
             font-size: 12px;
             padding: 15px;
+            clear: both;
         }
 
         @media screen and (min-width: 600px)
@@ -129,11 +135,89 @@
             border: 10px solid #cd3333;
         } */
 
-    </style>
+        @media screen and (min-width: 600px)
+        {
+            .col-s-3
+            {
+                width: 25%;
+            } 
+            
+            .col-s-9
+            {
+                width: 75%;
+            }
+        }
+
+        @media screen and (max-width: 609px)
+        {
+            .nav
+            {
+                display: none;
+
+            } 
+            
+            /* .menu
+            {
+                width: 100%;
+            } */
+        }
+
+        @media screen 
+        and (min-width: 600px)
+        {
+            .col-s-3
+            {
+                width: 25%;
+            }
+
+            .col-sm-9
+            {
+                width: 75%;
+            }
+            
+            .col-s-12
+            {
+                width: 100%;
+            }
+        }
+        @media screen 
+        and (max-width: 608px)
+        {
+            .col-sm-3
+            {
+                width: 25% !important;
+            }
+        }
+        @media screen 
+        and (min-width: 610px)
+        {
+            .col-sm-3-nav
+            {
+                display: none;
+            }
+            .col-md-6
+            {
+                width: 60%;
+            }
+        }
+
+        [class*="col-"]
+        {
+            float: left;
+            padding: 15px;
+            /* width: 100%; */
+        }
+/* 
+        .row::after{
+            clear: both;
+            display: table;
+        } */
+        </style>
 
 </head>
 <body>
     <div class="header">
+        <!-- <img src="img/kid-code6.jpg" style="width:100%"> -->
         <h1>NIIT</h1>
     </div>
 
@@ -148,7 +232,7 @@
             </ul>
         </div>
 
-        <div class="col-3 col-s-3 menu">
+        <div class="col-sm-3 menu col-sm-3-nav">
             <ul>
                 <li>HOME</li>
                 <li>ABOUT US</li>
@@ -158,7 +242,7 @@
             </ul>
         </div>
     
-        <div class="col-6 col-s-9">
+        <div class="col-md-6 col-sm-9">
             <h1>
                 NIIT Education
             </h1>
@@ -168,7 +252,7 @@
             </p>
         </div>
     
-        <div class="col-3 col-s-12">
+        <div class="col-sm-3 col-sm-9">
             <div class="aside">
 
                 <h1>
@@ -198,6 +282,7 @@
             </div>
         </div>
     </div>
+
     <div class="footer">
         <span>   
             All Rights Reserved!
