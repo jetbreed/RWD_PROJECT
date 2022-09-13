@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Instant Search</title>
+        <link rel="stylesheet" type="text/css" href="css/StyleSheet.css"></link>
+        <script src="js/angular.min.js"></script>
+        <script src= "js/ScriptFile.js"></script>
+    </script>
+</head>
+    <body>
+  
+<div ng-app="instantSearch" ng-controller="InstantSearchController">
+
+	<div class="bar">
+		<!-- Create a binding between the searchString model and the text field -->
+		<input type="text" ng-model="searchString" placeholder="Search for contact" />
+	</div>
+
+	<ul>
+		<!-- Render a li element for every entry in the items array. Notice
+			 the custom search filter "searchFor". It takes the value of the
+			 searchString model as an argument.
+		 -->
+		<li ng-repeat="i in items | searchFor:searchString">
+				<a href="{{i.PhoneNo}}"><img ng-src="{{i.image}}" /></a>
+			<p>{{i.Name}}</p>
+		</li>
+	</ul>
+</div>    
+    </body>
+</html>

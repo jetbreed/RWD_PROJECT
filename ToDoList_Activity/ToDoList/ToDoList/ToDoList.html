@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>My To Do List</title>
+        <link rel="stylesheet" type="text/css" href="CSS/StyleSheet.css"></link>
+        <script src="js/angular.min.js"></script>
+        <script src= "js/ScriptFile.js"></script>
+        </head>
+   <body ng-app="">
+
+<div class="container" ng-controller="TodoController">
+	<header class="app-header">
+		<h1 class="app-title">{{ appTitle }}</h1>
+		<h1 class="app-headline">{{ appHeadline }}</h1>
+	</header>
+
+	<section class="app-body">
+		<section class="archive-control">
+			<span>{{ remaining() }} of {{ todos.length }} remaining</span>
+			<p><input type="button"  ng-click="archive()" value ="Delete"> </p>
+		</section>
+
+		<ul class="unstyled">
+			<li ng-repeat="todo in todos track by $index">
+				<input type="checkbox" ng-model="todo.done">
+				<span class="done-{{ todo.done }}">{{ todo.text }}</span>
+			</li>
+		</ul>
+
+		<form ng-submit="addTodo()" class="todo-form">
+			<input type="text" ng-model="todoText" placeholder="Enter new task" />
+			<br />
+			<input type="submit" value="Add Task" />
+		</form>
+	</section>
+</div>
+       </body>
+
+</html>

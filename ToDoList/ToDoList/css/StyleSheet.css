@@ -1,0 +1,90 @@
+ 
+            
+body {
+font-family:Arial;
+        
+}
+
+a{
+text-decoration: none;
+font-weight: bold;
+color: rgb(145, 145, 145);
+}
+.container {
+width: 100%;
+max-width: 960px;
+margin: 0px auto;
+background-color: #f3e7f3;
+ border:  1px solid rgba(0, 0, 0, 0.5);
+}
+
+.app-header {
+text-align: center;
+border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+height: 40px;
+background: #336699;
+}
+.app-title {
+font-size: 28px;
+line-height: 40px;
+padding: 0px;
+margin: 0px;
+color: #fff;
+text-shadow: 1px 1px 3px #000000;
+filter: dropshadow(color=#000000, offx=1, offy=1);
+}
+.app-headline {
+color: #808080;
+font-size: 12px;
+font-style: oblique;
+}
+
+.app-body {
+margin-top: 40px;
+}
+
+.done-true {
+text-decoration: line-through;
+color: grey;
+}
+
+.archive-control {
+border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+height: 22px;
+line-height: 22px;
+padding: 5px 0px 5px 10px;
+margin-bottom: 50px;
+background: #ecf0f1;
+}
+
+ul {
+list-style: none;
+padding-left: 0;
+padding: 10px;
+}
+ul li {
+line-height: 32px;
+border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.todo-form {
+padding: 10px;
+text-align: center;
+}
+
+input[type="text"] {
+border: 1px solid rgba(0, 0, 0, 0.3);
+ 
+height: 30px;
+width: 100%;
+max-width: 400px;
+}
+
+input[type="submit"],[type="button"] {
+height: 30px;
+text-align: center;
+margin: 10px;
+width: 120px;
+}
+            
+      
