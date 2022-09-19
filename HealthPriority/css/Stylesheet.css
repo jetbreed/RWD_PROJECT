@@ -1,0 +1,575 @@
+
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+
+aside, details, footer, header, main, nav, section {
+    display: block;
+}
+
+a:focus {
+    outline: thin dotted;
+}
+
+a:active, a:hover {
+    outline: 0;
+}
+
+p {
+    margin: 16px 0;
+}
+
+
+/* ==========================================================================
+   Lists
+   ========================================================================== */
+
+/**
+ * Address margins set differently in IE 6/7.
+ */
+
+
+menu, ol, ul {
+    margin: 1em 0;
+}
+
+
+
+/**
+ * Address paddings set differently in IE 6/7.
+ */
+
+menu, ol, ul {
+    padding: 0 0 0 40px;
+}
+
+/**
+ * Correct list images handled incorrectly in IE 7.
+ */
+
+nav ul, nav ol {
+    list-style: none;
+    list-style-image: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* typography */
+body{
+    background:#fff;
+    color:#666;	
+    font-size:1em;
+    line-height:1.4em; 
+    font-weight:normal;
+    font-family: sans-serif;
+    margin-top: 1px;
+}
+
+ 
+h1, h2, h3, h4, h5, h6{
+    font-weight:400;	
+    line-height:1.5em;
+    margin:.45em 0;
+    padding:0;
+} 
+
+/* links */
+a,
+a:visited,
+a:active,
+a:hover{color:#0099ff;}
+a:hover{ text-decoration:none;}
+
+
+
+
+#v_head
+{
+
+background: url('../images/banner.png');
+float: left;
+width: 100%;
+padding: 20px 0 20px 0;
+
+}
+#banner
+{ 
+    text-align:center;
+    padding-left: 20px;
+}	
+#contact
+{
+float: right; 
+font-weight: bold;
+padding: 40px 40px 0 0;
+color: #294703;
+}
+/* structure */   
+.wrapper{
+    width: 92%; 
+    margin: 0 auto;
+background:white; 
+}
+
+ #para_id {
+        text-align: justify;
+        padding-right: 15px;
+     }
+
+/*MAIN MENU*/
+.menu-toggle{
+    display:block;
+    padding:10px;
+    margin:20px 0 0;
+    background:#666;
+    color:#fff;
+    cursor:pointer;
+    text-transform:uppercase;
+    font-size:20px;
+}
+.menu-toggle.toggled-on{
+    background:#5ec79e;
+}
+.srt-menu{
+    display:none;
+}	
+.srt-menu.toggled-on{
+    display:block;
+    position:relative;
+    z-index:10;
+}
+
+.srt-menu{
+    clear:both;
+    margin-bottom:70px;
+
+    background: #ccc;
+z-index: 100;
+    /* gradient */
+    background: #6a6a6a url(images/nav-bar-bg.png) repeat-x;
+    background: -webkit-gradient(linear, left top, left bottom, from(#b9b9b9), to(#6a6a6a));
+    background: -moz-linear-gradient(top,  #b9b9b9,  #6a6a6a);
+    background: linear-gradient(-90deg, #b9b9b9, #6a6a6a);
+    /* rounded corner */
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    /* box shadow */
+    -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.3), 0 1px 1px rgba(0,0,0,.4);
+    -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.3), 0 1px 1px rgba(0,0,0,.4);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.3), 0 1px 1px rgba(0,0,0,.4);
+}
+#searchbox {
+    width: 160px;
+    float: right;
+    background: #fff;
+    margin-right: 10px;
+    border: none;
+    margin-top: 8px;
+    padding: 5px 8px;
+    /* border radius */
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    /* box shadow */
+    -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.2);
+    -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,.2);
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.2);
+    /* transition */
+    -webkit-transition: width .7s;
+    -moz-transition: width .7s;
+    transition: width .7s;
+}
+.srt-menu li input
+
+ {    
+background:#dadada;
+    display:block;
+    margin:1px 0; 
+    padding:10px;
+    text-decoration:none;
+    font-size:.9em;
+}
+.srt-menu li{
+
+}
+.srt-menu li a {    
+  
+    display:block;
+    margin:1px 0; 
+ padding: 14px 15px;
+    text-decoration:none;
+    font-size:.9em;
+line-height: 100%;
+    font-weight: bold;
+    color: #fff;
+    font-family:Gill Sans Extrabold, sans-serif;
+text-shadow: 0 -1px 0 rgba(0,0,0,.1);
+
+}
+.srt-menu li a:hover{
+    color: #fff;
+    background: #474747;
+    /* gradient */
+    background: -webkit-gradient(linear, left top, left bottom, from(#282828), to(#4f4f4f));
+    background: -moz-linear-gradient(top,  #282828,  #4f4f4f);
+    background: linear-gradient(-90deg, #282828, #4f4f4f);
+}
+ 
+
+/* paragraph*/
+ 
+#page-header{ padding-left: 10px;
+    margin-top: 1px;
+    margin-bottom: -10px;
+   
+ 
+
+}
+#page-header h3{
+ font-weight: bolder;
+    margin:0;
+ 
+
+}
+.p_pad
+{
+    padding-left: 10px;
+}
+ 
+.content{  
+    padding-left: 10px;
+    
+}
+p{ margin:0 0 1.5em;}
+
+
+/* RESPONSIVE IMAGES  */
+img{ max-width:100%; height:auto;}
+
+
+
+
+#portfolio
+{
+
+margin-top:-15px;
+margin-bottom:-15px;
+
+}
+
+.portfolio_left
+{
+margin-top:-5px;
+margin-bottom:-5px;
+
+width: 50%;float: left;text-align: justify;
+}
+.portfolio_right
+{
+margin-top:-5px;
+margin-bottom:-5px;
+
+      width: 40%;float: right;
+      margin-right: 25px;
+}
+
+
+.portfolio_right a img
+{
+    margin-top: 35px;
+    margin-right: 25px;
+    display:block;
+    width:100%;
+    height:auto;
+    border:5px solid #E0E0E0;
+    opacity:0.9; 
+    }
+.portfolio_right a:hover img
+{  
+    border:5px solid #860f08;
+    opacity:1.0; 
+    }
+
+
+
+/*FOOTER*/
+#attribution
+{  margin-left: -2px;
+    background: #ccc;
+    z-index: 100;
+    /* gradient */
+    background: #6a6a6a url(images/nav-bar-bg.png) repeat-x;
+    background: -webkit-gradient(linear, left top, left bottom, from(#b9b9b9), to(#6a6a6a));
+    background: -moz-linear-gradient(top,  #b9b9b9,  #6a6a6a);
+    background: linear-gradient(-90deg, #b9b9b9, #6a6a6a);
+    /* rounded corner */
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    /* box shadow */
+    -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.3), 0 1px 1px rgba(0,0,0,.4);
+    -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.3), 0 1px 1px rgba(0,0,0,.4);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.3), 0 1px 1px rgba(0,0,0,.4);
+    color:#ccc;
+    font-size:80%;
+    padding:10px 0;
+    width:100%;
+}
+#attribution p{
+    margin:0 0 0 8%;
+    padding:0;
+}
+
+ 
+
+/* Contain floats*/ 
+.clearfix:before,
+.clearfix:after,
+.row:before,
+.row:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after,
+.container:after,
+.row:after{
+    clear: both;
+}
+
+
+
+/****************************************
+*****************************************
+MEDIAQUERIES
+*****************************************
+****************************************/
+
+
+
+/*
+LARGER MOBILE DEVICES
+This is for mobile devices with a bit larger screens.
+*/
+@media only screen and (max-width: 481px) 
+{
+  #banner
+  {
+        left: -10px;
+        float:left;
+        text-align:left;
+        margin-bottom:-20px;/*this depends on the height of the logo*/
+    }
+    .menu-toggle{/*make menu float right, instead of sitting under the logo*/
+        margin-top:10px; /*this depends on the height of the logo*/
+        float:right;
+    }
+
+ 
+.portfolio_left
+{
+
+width: 100%;float: left;
+}
+.portfolio_right
+{
+float: none;
+display: none;
+}
+
+#send:hover{
+    background: linear-gradient(#36caf0 5%, #22abe9 100%);
+}
+} 
+
+/*
+TABLET & SMALLER LAPTOPS
+The average viewing window and preferred media query for those is 768px.
+But I think that some more breathing space is good:)
+*/
+@media only screen and (min-width: 960px) {
+
+    .wrapper{
+    max-width: 1200px; 
+    margin: .12em auto;
+      
+    }
+    header{
+        padding:0;
+    }
+    #banner{ 
+        float:left; 
+        text-align:left;
+        margin-bottom:0px;
+        margin-top:5px;
+    }
+       
+    /*** MAIN MENU - ESSENTIAL STYLES ***/
+    .menu-toggle{display:none;}
+    #menu-main-navigation{
+
+display:block;
+background: #ccc;
+    margin: 0;
+    padding: 0;
+ 
+     left: 0;
+    bottom: 0;
+    z-index: 100;
+    /* gradient */
+    background: #6a6a6a url(images/nav-bar-bg.png) repeat-x;
+    background: -webkit-gradient(linear, left top, left bottom, from(#b9b9b9), to(#6a6a6a));
+    background: -moz-linear-gradient(top,  #b9b9b9,  #6a6a6a);
+    background: linear-gradient(-90deg, #b9b9b9, #6a6a6a);
+    /* rounded corner */
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    /* box shadow */
+    -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.3), 0 1px 1px rgba(0,0,0,.4);
+    -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.3), 0 1px 1px rgba(0,0,0,.4);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.3), 0 1px 1px rgba(0,0,0,.4);
+    }
+
+    .srt-menu, .srt-menu * {
+        margin:			0;
+        padding:		0;
+        list-style:		none;
+    }
+    .srt-menu ul {
+        position:		absolute;
+        display:none;
+        width:			12em; /* left offset of submenus need to match (see below) */
+    }
+    .srt-menu ul li {
+        width:			100%;
+    }
+    .srt-menu li:hover {
+        visibility:		inherit; /* fixes IE7 'sticky bug' */
+    }
+    .srt-menu li {
+        float:			left;
+        position:		relative;
+        margin-left:1px;
+        height:25px;
+    }
+    .srt-menu li:last-child {
+        float:			right;
+
+    }
+    .srt-menu li li {
+        margin-left:0px;
+        height:auto;
+    }
+    .srt-menu a {
+        display:		block;
+        position:		relative;
+    }
+    .srt-menu li:hover ul    {
+        display:block;
+        left:			0;
+        top:			42px; /* match top ul list item height */
+        z-index:		99;
+        -webkit-box-shadow:  2px 3px 2px 0px rgba(00, 00, 00, .3);
+        box-shadow:  2px 3px 2px 0px rgba(00, 00, 00, .3);
+    }
+
+    /*** DEMO2 SKIN ***/
+    .srt-menu{
+        background: linear-gradient(-90deg, #b9b9b9, #6a6a6a) repeat scroll 0 0 rgba(0, 0, 0, 0);
+        height: 43px;
+    }
+
+
+    #topnav, .srt-menu {
+        float:right;
+        margin: 2px 0 0 0;
+        width: 100%;
+}
+
+
+div.container {
+width: 100%;
+height: 85%;
+font-family: 'Droid Serif', serif;
+position:relative;
+
+}
+
+div.contact_us
+{
+    width: 40%;
+
+    float: left;
+    padding: 10px 55px 40px;
+    background-color: rgba(235, 238, 237, 0.65);
+    border: 10px solid white;
+  margin: 70px 0 150px 350px;
+    
+    border-radius: 5px;
+    font-size: 13px;
+    box-shadow: 0 0 5px black;
+}
+
+input[type=text] {
+    width: 50%;
+    height: 25px;
+    padding-left: 5px;
+    margin-bottom: 20px;
+    margin-top: 8px;
+    box-shadow: 0 0 5px #FFF;
+    border: 2px solid #808080;
+    color: #4f4f4f;
+    font-size: 16px;
+}
+
+    textarea
+ {
+    box-shadow: 0 0 5px #FFF;
+    border: 2px solid #808080;
+    color: #4f4f4f;
+    font-size: 16px;
+
+    }
+label{
+    color: #474747;
+    text-shadow: 0 1px 0 #fff;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#send {
+    width: 30%;
+    background: linear-gradient(#22abe9 5%, #36caf0 100%);
+    border: 1px solid #0F799E;
+    font-size: 20px;
+    margin-top: 35px;
+    padding: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    text-shadow: 0px 1px 0px #13506D;
+}
+
+#send:hover{
+    background: linear-gradient(#36caf0 5%, #22abe9 100%);
+}
+
+h2{
+    text-align: center;
+    font-size: 24px;
+    color: rgba(0,0,0, .75);
+    text-shadow: 0 1px 0 #fff;
+
+}
+
+hr{
+    margin-bottom: 30px;
+}
+
+}

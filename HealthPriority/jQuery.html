@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, 
+    initial-scale=1.0, user-scalable=yes">
+</head>
+
+<body>
+
+    <form action="">
+        <input type="text" name="Elvis" value="">
+        <br>
+        <input type="text" name="Steve" value="">
+        <br>
+        <input type="text" name="Steve" value="">
+        <br>
+        <input type="text" name="Steve" value="">
+        <br>
+        <br>
+        <button id="form" type="submit">SEND</button>
+     </form>
+
+    <button>CLICK ME</button>
+
+    <p>Who is in the class...</p>
+    <p>Who is in class...</p>
+    <p>Who is in the class...</p>
+    <p>Who is in the class - Chidinma...</p>
+
+     <script src="js/jquery-1.9.0.min.js"></script>
+
+     <script>
+        $(document).ready(function () {
+            var input = $("input");
+            $("button#form").click(function(){
+                alert($(input[0]).val() +
+                $(input[1]).val() +
+                $(input[2]).val() +
+                $(input[3]).val());
+            })
+
+            $("form").css("background","green");
+            $("form").css("margin-bottom","20px");
+            $("form").css("padding","20px");
+
+            // $("button").click(function(){
+            //     alert("Hey! You clicked me!!!");
+            // });
+
+            $("p:odd").css("background-color","red");
+            $("p:even").css("background-color","red");
+            $("p:contains(Chidinma)").css("color","white");
+        });            
+     </script>
+
+</body>
+</html>
