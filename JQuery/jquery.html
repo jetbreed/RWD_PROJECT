@@ -1,32 +1,47 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>JQuery Examples</title>
-    
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/sidebars/">
-    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>JQuery Examples</title>
+        
+        <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/sidebars/">
+        <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/w3.css" rel="stylesheet">
 
-    <style>
-        .bd-placeholder-img {
-          font-size: 1.125rem;
-          text-anchor: middle;
-          -webkit-user-select: none;
-          -moz-user-select: none;
-          user-select: none;
-        }
-  
-        @media (min-width: 768px) {
-          .bd-placeholder-img-lg {
-            font-size: 3.5rem;
-          }
-        }
-      </style>
+        <style>
+            .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+            }
+    
+            @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+            }
+        </style>
   
       
-      <!-- Custom styles for this template -->
-      <link href="css/headers.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="css/headers.css" rel="stylesheet">
+
+        <script src="js/jquery-1.9.0.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("p").click(function(){
+                    // The action
+                    $("p").hide();
+                });
+                $("button").click(function(){
+                    // The action
+                    $("p#p2").hide();
+                });
+            });
+        </script>
     </head>
 
     <body class="text-white bg-dark">
@@ -91,21 +106,18 @@
           </svg>
           
 
-    <main>
-
     <header class="p-3 bg-dark text-white">
         <div class="container">
             <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
             <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
                 <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
             </a>
-    
             <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                <li><a href="#" class="nav-link px-2 text-white">Home</a></li>
-                <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
-                <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
-                <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
-                <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+                <li><a href="#" class="px-2 nav-link text-white w3-hover-white">Home</a></li>
+                <li><a href="#" class="nav-link px-2 text-white nav-link text-white w3-hover-white">Features</a></li>
+                <li><a href="#" class="nav-link px-2 text-white nav-link text-white w3-hover-white">Pricing</a></li>
+                <li><a href="#" class="nav-link px-2 text-white nav-link text-white w3-hover-white">FAQs</a></li>
+                <li><a href="#" class="nav-link px-2 text-white nav-link text-white w3-hover-white">About</a></li>
             </ul>
     
             <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
@@ -118,56 +130,55 @@
             </div>
             </div>
         </div>
-        </header>
+    </header>
         
-  <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px;">
-    <!-- <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-      <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
-      <span class="fs-4">Sidebar</span>
-    </a> -->
-    <hr>
+    <hr/>
+    
+    <!-- SIdebar Section -->
+  <div class="d-flex flex-column flex-shrink-0 p-3 
+  text-white bg-dark float-start" style="width: 280px;">
     <ul class="nav nav-pills flex-column mb-auto">
      
-        <a href="#" class="nav-link text-white">
+        <a href="hide.html" class="nav-link text-white w3-border-bottom w3-hover-white w3-border-bottom w3-hover-white">
           <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
-          Dashboard
+          Hide
         </a>
       </li>
       <li>
-        <a href="#" class="nav-link text-white">
+        <a href="#" class="nav-link text-white w3-border-bottom w3-hover-white w3-border-bottom w3-hover-white">
           <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"/></svg>
           Orders
         </a>
       </li>
       <li>
-        <a href="#" class="nav-link text-white">
+        <a href="#" class="nav-link text-white w3-border-bottom w3-hover-white">
           <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"/></svg>
           Products
         </a>
       </li>
       <li>
-        <a href="#" class="nav-link text-white">
+        <a href="#" class="nav-link text-white w3-border-bottom w3-hover-white">
           <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
           Customers
         </a>
       </li>
     </ul>
     <hr>
-    <div class="dropdown">
-      <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-        <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
-        <strong>mdo</strong>
-      </a>
-      <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
-        <li><a class="dropdown-item" href="#">New project...</a></li>
-        <li><a class="dropdown-item" href="#">Settings</a></li>
-        <li><a class="dropdown-item" href="#">Profile</a></li>
-        <li><hr class="dropdown-divider"></li>
-        <li><a class="dropdown-item" href="#">Sign out</a></li>
-      </ul>
-    </div>
   </div>
 
+  <!-- article body section -->
+  <div class="">
+    
+    <h2 style="text-decoration: underline">
+        $ symbolises the Jquery 
+    </h2>
+
+    <p>CLICK THIS PARAGRAPH TO HIDE IT!!!</p>
+
+    <br>
+    <button>CLICK THIS BUTTON TO HIDE PARAGRAPH-2 BELOW:</button>
+    <p id="p2">This is paragraph-2</p>
+</div>
 
   <script src="dist/js/bootstrap.bundle.min.js"></script>
 
