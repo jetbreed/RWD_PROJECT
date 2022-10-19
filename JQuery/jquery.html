@@ -29,19 +29,10 @@
         <!-- Custom styles for this template -->
         <link href="css/headers.css" rel="stylesheet">
 
-        <script src="js/jquery-1.9.0.min.js"></script>
-        <script>
-            $(document).ready(function(){
-                $("p").click(function(){
-                    // The action
-                    $("p").hide();
-                });
-                $("button").click(function(){
-                    // The action
-                    $("p#p2").hide();
-                });
-            });
-        </script>
+        <!-- <script src="js/jquery-1.9.0.min.js"></script> -->
+        <script src="js/jquery-3.6.1.min.js"></script>
+        <script src="js/ourjquery.js"></script>
+        
     </head>
 
     <body class="text-white bg-dark">
@@ -136,7 +127,7 @@
     
     <!-- SIdebar Section -->
   <div class="d-flex flex-column flex-shrink-0 p-3 
-  text-white bg-dark float-start" style="width: 280px;">
+  text-white bg-dark float-start" style="width: 280px; height: 100vh;">
     <ul class="nav nav-pills flex-column mb-auto">
      
         <a href="hide.html" class="nav-link text-white w3-border-bottom w3-hover-white w3-border-bottom w3-hover-white">
@@ -176,8 +167,18 @@
     <p>CLICK THIS PARAGRAPH TO HIDE IT!!!</p>
 
     <br>
-    <button>CLICK THIS BUTTON TO HIDE PARAGRAPH-2 BELOW:</button>
+    <button id="b0">CLICK THIS BUTTON TO HIDE PARAGRAPH-2 BELOW:</button>
+    <button id="b01">CLICK THIS BUTTON TO SHOW PARAGRAPH-2 BELOW:</button>
     <p id="p2">This is paragraph-2</p>
+</div>
+
+<hr/>
+<button class="btn-outline-success" id="b1">FADE OUT </button>
+<button class="btn-outline-success" id="b2">FADE IN </button>
+<button class="btn-outline-success" id="b3">FADE TOGGLE </button>
+<button class="btn-outline-success" id="b4">FADE TO 0.50 </button>
+<div style="height: 100px; background-color:aqua" id="d1">
+    dsvvfvfsvsdvsvs
 </div>
 
   <script src="dist/js/bootstrap.bundle.min.js"></script>
