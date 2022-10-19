@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          
+            $("#d1").mouseover(function(){
+                $("#d1").css("background-color","blue");
+            });
+            $("#d1").mouseout(function(){
+                $("#d1").css("background-color","red");
+            });
+            $("#b1").click(function(){
+                $("#d1")
+                .css("background-color", "yellow", 2000)
+                // .css("background-color","blue", 2000)
+                .fadeToggle(2000);
+            });
+        });
+    </script>
+    <style>
+        #d1
+        {
+            background-color: red;
+            height: 300px;
+            width: 300px;
+        }
+        #b1
+        {
+            background-color: #000;
+            color:#fff;
+            height: 50px;
+            width: 300px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- JQuery interacts with HMTL DOM -->
+    <button id="b1">
+        HIDE
+    </button>
+
+    <div id="d1">
+
+    </div>
+
+</body>
+</html>
