@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="js/jquery-3.6.1.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#p1")
+    .slideUp(2000)
+    .slideDown(2000)
+    .css("color", "white");
+  });
+});
+</script>
+<style>
+    #p1
+    {
+        background-color: red;   
+        padding: 10px;
+        font-size: 30px;
+        color: #fff;
+        font-weight: bolder;
+    }
+</style>
+</head>
+<body>
+
+<p id="p1">NIIT is fun!!</p>
+
+<button>Click me</button>
+
+</body>
+</html>
