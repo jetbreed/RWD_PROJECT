@@ -1,0 +1,100 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-updated.js"></script>
+
+    <!-- jquery -->
+    <script>
+        $(document).ready(function(){
+            var hidden = true;
+            $("#d1").hide(0);
+            $("#d2").hide(0);
+            $("#d3").hide(0);
+            $("#d4").hide(0);
+
+
+            $("#btn1").mouseover(function(){
+                $("#btn1").css("background-color","rgb(255, 246, 167)");
+            });
+            $("#btn1").mouseout(function(){
+                $("#btn1").css("background-color","rgb(102, 4, 102)");
+            });
+            $("#btn1").click(function(){
+                if(hidden){
+                    $("#d1").show(500);
+                    $("#d2").show(1000);
+                    $("#d3").show(1500);
+                    $("#d4").show(2000);
+                    hidden = false;
+                }
+                else{
+                    $("#d1").hide(500);
+                    $("#d2").hide(1000);
+                    $("#d3").hide(1500);
+                    $("#d4").hide(2000);
+                    hidden = true;
+                }
+               
+            });
+        });
+    </script>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        #btn1{
+            background-color: rgb(102, 4, 102);
+            color: #fff;
+            height: 50px;
+            width: 300px;
+            border-radius: 150px;
+            align-content: center;
+        }
+        #d1{
+            background-color: red;
+            height: 100px;
+            width: 100px;
+            border-radius: 50px;
+        }
+        #d2{
+            background-color: yellow;
+            height: 100px;
+            width: 100px;
+            border-radius: 50px;
+        }
+        #d3{
+            background-color: blue;
+            height: 100px;
+            width: 100px;
+            border-radius: 50px;
+        }
+        #d4{
+            background-color: green;
+            height: 100px;
+            width: 100px;
+            border-radius: 50px;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn1">CLICK-ME</button>
+    <br>
+    <div id="d1">   </div>
+    <br>
+    <div id="d2">   </div>
+    <br>
+    <div id="d3">   </div>
+   <br>
+    <div id="d4">   </div>
+
+
+    
+</body>
+</html>

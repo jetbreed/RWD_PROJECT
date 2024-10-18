@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script> -->
+  <script src="tailwindlib.js"></script>
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+    }
+  </style>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+
+    <!-- This example requires some changes to your config: -->
+  <script>
+  tailwind.config.js
+</script>
+    <header class="bg-red-500 h-16">
+  
+    </header>
+    <main class="bg-blue-400 h-96">
+      <div class="p-5 flex space-x-11">
+        <div class="bg-red-500 h-10 w-10 rounded-full"></div>
+        <div class="bg-red-500 h-10 w-10 rounded-full"></div>
+        <div class="bg-red-500 h-10 w-10 rounded-full"></div>
+        <div class="bg-red-500 h-10 w-10 rounded-full"></div>
+        <div class="bg-red-500 h-10 w-10 rounded-full"></div>
+        <div class="bg-red-500 h-10 w-10 rounded-full"></div>
+      </div><div class="p-5 grid grid-cols-6">
+        <div class="h-10 w-10 rounded-full odd:bg-yellow-400 even:bg-green-600"></div>
+        <div class="h-10 w-10 rounded-full odd:bg-yellow-400 even:bg-green-600"></div>
+        <div class="h-10 w-10 rounded-full odd:bg-yellow-400 even:bg-green-600"></div>
+        <div class="h-10 w-10 rounded-full odd:bg-yellow-400 even:bg-green-600"></div>
+        <div class="h-10 w-10 rounded-full odd:bg-yellow-400 even:bg-green-600"></div>
+        <div class="h-10 w-10 rounded-full odd:bg-yellow-400 even:bg-green-600"></div>
+      </div>
+    </main>
+    <footer class="bg-slate-800 h-11">
+  
+    </footer>
+  </body>
+  </html>

@@ -5,9 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/jquery-updated.js"></script>
+<!-- 
+    Some JQuery Commands
+    1. ready
+    2. load
+    3. mouseout
+    4. click
+    5. fade
+    6. slide
+    7. animate
+    8. css (for manipulating css).
+
+    JQuery will need a "Selector" which can be a tag, id, class
+    or pathway to an element to manipulate the DOM.
+ -->
+
     <script>
-        $(document).ready(function(){
+        $(document).ready(()=>{
           
             $("#d1").mouseover(function(){
                 $("#d1").css("background-color","blue");
@@ -16,12 +31,22 @@
                 $("#d1").css("background-color","red");
             });
             $("#b1").click(function(){
-                $("#d1")
-                .css("background-color", "yellow", 2000)
+                $("#d1").css("background-color", "yellow")
                 // .css("background-color","blue", 2000)
-                .fadeToggle(2000);
+                .fadeToggle(5000);
             });
         });
+
+        /*const move = ()=> {
+            alert();
+        }
+
+        move;
+
+        (()=>{
+            const num = num1+num2;
+            return num;
+        })*/
     </script>
     <style>
         #d1
@@ -43,12 +68,13 @@
 <body>
     <!-- JQuery interacts with HMTL DOM -->
     <button id="b1">
-        HIDE
+       TOGGLE HIDE
     </button>
 
     <div id="d1">
 
-    </div>
 
+    </div>
+    
 </body>
 </html>

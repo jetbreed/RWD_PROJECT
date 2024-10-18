@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="js/jquery-updated.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#animatorBtn").click(function () {
+           $(".divClass1").toggleClass("animatorForward1");
+           $(".divClass2").toggleClass("animatorForward2");
+           $(".divClass3").toggleClass("animatorForward3");
+           $(".divClass4").toggleClass("animatorForward4");
+           $(".divClass5").toggleClass("animatorForward5");
+           $(".divClass6").toggleClass("animatorForward6");
+           $(".divClass7").toggleClass("animatorForward7");
+           $(".divClass8").toggleClass("animatorForward8");
+           $(".divClass9").toggleClass("animatorForward9");
+           $(".divClass10").toggleClass("animatorForward10");
+           $(".divClass11").toggleClass("animatorForward11");
+           $(".divClass12").toggleClass("animatorForward12");
+        });
+      });
+    </script>
+    <style>
+      #animatorBtn {
+        height: 50px;
+        width: 300px;
+      }
+
+      .divGrp
+      {
+        display: flex;
+        justify-content: center;
+      }
+
+      .divClass1, .divClass2, .divClass3, .divClass4, .divClass5, .divClass6, 
+      .divClass7, .divClass8, .divClass9, .divClass10, .divClass11, .divClass12
+      {
+        width: 120px;
+        height: 120px;
+        background-color: white;
+        border:1px solid #e8e8e8;
+        text-align: center;
+        line-height: 120px;
+        font-size: 60px;
+        margin:5px;
+      }
+
+      .animatorForward1 {
+        animation-name: animator1;
+        animation-duration: 1s;
+        animation-timing-function: ease-in;
+        animation-fill-mode: forwards;
+        animation-delay: 0s;
+      }
+      
+      .animatorForward2 {
+        animation-name: animator2;
+        animation-duration: 1s;
+        animation-timing-function: ease-in;
+        animation-fill-mode: forwards;
+        animation-delay:2s;
+      }
+      
+      .animatorForward3 {
+        animation-name: animator3;
+        animation-duration: 1s;
+        animation-timing-function: ease-in;
+        animation-fill-mode: forwards;
+        animation-delay: 3s;
+      }
+      
+      .animatorForward4 {
+        animation-name: animator4;
+        animation-duration: 1s;
+        animation-timing-function: ease-in;
+        animation-fill-mode: forwards;
+        animation-delay: 4s;
+      }
+      
+      .animatorForward5 {
+        animation-name: animator5;
+        animation-duration: 1s;
+        animation-timing-function: ease-in;
+        animation-fill-mode: forwards;
+        animation-delay: 5s;
+      }
+      
+      .animatorForward6 {
+        animation-name: animator6;
+        animation-duration: 1s;
+        animation-timing-function: ease-in;
+        animation-fill-mode: forwards;
+        animation-delay: 6s;
+      }
+      
+      .animatorForward7 {
+        animation-name: animator7;
+        animation-duration: 1s;
+        animation-timing-function: ease-in;
+        animation-fill-mode: forwards;
+        animation-delay: 7s;
+      }
+      
+      .animatorForward8 {
+        animation-name: animator8;
+        animation-duration: 1s;
+        animation-timing-function: ease-in;
+        animation-fill-mode: forwards;
+        animation-delay: 8s;
+      }
+      
+      .animatorForward9 {
+        animation-name: animator9;
+        animation-duration: 1s;
+        animation-timing-function: ease-in;
+        animation-fill-mode: forwards;
+        animation-delay: 9s;
+      }
+      
+      .animatorForward10 {
+        animation-name: animator10;
+        animation-duration: 1s;
+        animation-timing-function: ease-in;
+        animation-fill-mode: forwards;
+        animation-delay: 10s;
+      }
+      
+      .animatorForward11 {
+        animation-name: animator11;
+        animation-duration: 1s;
+        animation-timing-function: ease-in;
+        animation-fill-mode: forwards;
+        animation-delay: 11s;
+      }
+      
+      .animatorForward12 {
+        animation-name: animator12;
+        animation-duration: 1s;
+        animation-timing-function: ease-in;
+        animation-fill-mode: forwards;
+        animation-delay: 12s;
+      }
+
+      @keyframes animator1 {
+        0%   {background-color:red;}
+        25%  {background-color:yellow;}
+        50%  {background-color:blue;}
+        75%  {background-color:green;}
+        100% {background-color:red; color:white;}
+      }
+      
+      @keyframes animator2 {
+        0%   {background-color:red;}
+        25%  {background-color:yellow;}
+        50%  {background-color:blue;}
+        75%  {background-color:green;}
+        100% {background-color:yellow; color:white;}
+      }
+      
+      @keyframes animator2 {
+        0%   {background-color:red;}
+        25%  {background-color:yellow;}
+        50%  {background-color:blue;}
+        75%  {background-color:green;}
+        100% {background-color:blue; color:white;}
+      }
+      
+      @keyframes animator3 {
+        0%   {background-color:red;}
+        25%  {background-color:yellow;}
+        50%  {background-color:blue;}
+        75%  {background-color:green;}
+        100% {background-color:green; color:white;}
+      }
+      
+      @keyframes animator4 {
+        0%   {background-color:red;}
+        25%  {background-color:yellow;}
+        50%  {background-color:blue;}
+        75%  {background-color:green;}
+        100% {background-color:#240A34; color:white;}
+      }
+      
+      @keyframes animator5 {
+        0%   {background-color:red;}
+        25%  {background-color:yellow;}
+        50%  {background-color:blue;}
+        75%  {background-color:green;}
+        100% {background-color:#114232; color:white;}
+      }
+      
+      @keyframes animator6 {
+        0%   {background-color:red;}
+        25%  {background-color:yellow;}
+        50%  {background-color:blue;}
+        75%  {background-color:green;}
+        100% {background-color:#6420AA; color:white;}
+      }
+      
+      @keyframes animator7 {
+        0%   {background-color:red;}
+        25%  {background-color:yellow;}
+        50%  {background-color:blue;}
+        75%  {background-color:green;}
+        100% {background-color:#3C0753; color:white;}
+      }
+      
+      @keyframes animator8 {
+        0%   {background-color:red;}
+        25%  {background-color:yellow;}
+        50%  {background-color:blue;}
+        75%  {background-color:green;}
+        100% {background-color:#A94438; color:white;}
+      }
+      
+      @keyframes animator9 {
+        0%   {background-color:red;}
+        25%  {background-color:yellow;}
+        50%  {background-color:blue;}
+        75%  {background-color:green;}
+        100% {background-color:#7D0A0A; color:white;}
+      }
+      
+      @keyframes animator10 {
+        0%   {background-color:red;}
+        25%  {background-color:yellow;}
+        50%  {background-color:blue;}
+        75%  {background-color:green;}
+        100% {background-color:#1B1A55; color:white;}
+      }
+      
+      @keyframes animator11 {
+        0%   {background-color:red;}
+        25%  {background-color:yellow;}
+        50%  {background-color:blue;}
+        75%  {background-color:green;}
+        100% {background-color:#98ABEE; color:white;}
+      }
+      
+      @keyframes animator12 {
+        0%   {background-color:red;}
+        25%  {background-color:yellow;}
+        50%  {background-color:blue;}
+        75%  {background-color:green;}
+        100% {background-color:#FF8911; color:white;}
+      }
+    </style>
+  </head>
+  <body>
+    <div class="divGrp">
+        <div class="divClass1">N</div>
+        <div class="divClass2">I</div>
+        <div class="divClass3">I</div>
+        <div class="divClass4">T</div>
+    </div>
+    
+    <br/>
+    <br/>
+    
+    <div class="divGrp">
+        <div class="divClass5">J</div>
+        <div class="divClass6">E</div>
+        <div class="divClass7">T</div>
+        <div class="divClass8">B</div>
+        <div class="divClass9">R</div>
+        <div class="divClass10">E</div>
+        <div class="divClass11">E</div>
+        <div class="divClass12">D</div>
+    </div>
+
+    <br/>
+
+    <div class="divGrp">
+        <button id="animatorBtn">Start Animation</button>
+    </div>
+
+    </body>
+</html>

@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script> -->
+  <script src="tailwindlib.js"></script>
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+    }
+  </style>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+
+<!-- This example requires some changes to your config: -->
+<script>
+  tailwind.config.js
+</script>
+
+<div class="h-[100vh] bg-blue-200 flex justify-center grid-cols-2 
+items-center space-x-4">
+
+    <div class="cursor-pointer h-24 w-24 bg-red-700 
+    hover:bg-green-700 
+    rounded-full shadow-lg shadow-stone-950 
+    ring-yellow-200 ring-2 flex justify-center items-center">
+  
+      <div class="h-20 w-20 flex justify-center items-center 
+      bg-red-700 
+      rounded-full shadow-stone-950 ring-2 ring-yellow-200">
+  
+        <div class="h-16 w-16 bg-red-700 rounded-full 
+        shadow-stone-950 ring-2 ring-yellow-200  flex justify-center 
+        items-center">
+  
+            <div class="h-12 w-12 bg-red-700 rounded-full
+             shadow-stone-950 ring-2 ring-yellow-200  flex 
+             justify-center items-center">
+  
+              <div class="h-6 w-6 bg-red-700 rounded-full
+               shadow-stone-950 ring-2 ring-yellow-200  flex 
+               justify-center items-center">
+  
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="cursor-pointer h-24 w-44 bg-red-700 rounded-[400px] 
+    text-white text-2xl hover:bg-green-700 
+    ring-2 ring-yellow-200 font-bold shadow-lg shadow-stone-950 
+    font-sans flex justify-center items-center">
+      SUBMIT
+    </div>
+  </div>
+</body>
+</html>

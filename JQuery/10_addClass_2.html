@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="js/jquery-updated.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $(".div1").addClass("important blue");
+  });
+});
+</script>
+<style>
+
+.important 
+{
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+.blue 
+{
+  color: blue;
+}
+
+body
+{
+   text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="div1">This is some text.</div>
+<div id="div2">This is some text.</div>
+<br>
+
+<button>Add classes to first div element</button>
+
+</body>
+</html>

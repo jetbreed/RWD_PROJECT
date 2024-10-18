@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script> -->
+    <script src="tailwindlib.js"></script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .margin-top-mean{
+          margin-top: -100px;
+        }
+      }
+
+      @layer components{
+        .picture-frame{
+          @apply h-[100px] w-[100px] rounded-full ring-1 ring-yellow-200
+        }
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <div class="h-[100vh] bg-gray-200 flex justify-center 
+    items-center">  
+      <div class="h-[200px] bg-gray-400 -space-x-[15px] ring-1 p-[20px] 
+      rounded-lg flex justify-center items-center ring-yellow-200 shadow
+      shadow-2xl shadow-black margin-top-mean">
+        <img class="picture-frame" src="images/1.jpg">
+        <img class="picture-frame" src="images/2.jpg">
+        <img class="picture-frame" src="images/3.jpg">
+        <img class="picture-frame" src="images/4.jpg">
+        <img class="picture-frame" src="images/5.jpg">
+        <img class="picture-frame" src="images/6.jpg">
+        <img class="picture-frame" src="images/7.jpg">
+        <img class="picture-frame" src="images/8.jpg">
+        <img class="picture-frame" src="images/9.jpg">
+        <img class="picture-frame" src="images/10.jpg">
+        <img class="picture-frame" src="images/11.jpg">
+      </div>
+    </div>
+  </body>
+</html>

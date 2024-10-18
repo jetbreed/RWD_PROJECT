@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+    <script src="js/ajax.js"></script>
+    <style>
+      #div1,
+      #div2 {
+        /* display: flex; */
+        /* justify-content: center; */
+        font-size: 30px;
+      }
+
+      button {
+        padding: 50px;
+        background-color: blue;
+        color: white;
+        font-weight: bolder;
+        font-size: 20px;
+      }
+    </style>
+
+    <script>
+      $(document).ready(() => {
+        var status = true;
+        $("button").click(() => {
+          if(status) {
+          console.log("2nd"); 
+          $("#div1").load("demo_test.txt");
+          $("#div1").show("demo_test.txt");
+          status = false;
+          }
+          else
+          {
+          console.log("2nd");
+          $("#div1").hide("demo_test.txt");
+          status = true;
+          }
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <h1>Let jQuery AJAX Change This Text</h1>
+    <div id="div1"></div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <div id="div2">
+      <button>Get External Content</button>
+    </div>
+  </body>
+</html>
+  

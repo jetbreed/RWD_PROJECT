@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="js/jquery-updated.js"></script>
+    <script>
+      $(document).ready(function () {
+        var animating = true;
+        $("#animatorBtn").click(function () {
+          //$("div").animate({left: '250px'});
+          //$("div").slideUp(2000).slideDown(2000);
+          if(animating){
+           $(".divClass").addClass("animatorForward", 3000);
+           $(".divClass").removeClass("animatorBackward", 3000);
+           animating = false;
+          }
+          else{
+            $(".divClass").addClass("animatorBackward", 3000);
+            //$(".divClass").removeClass("animatorForward", 3000);
+            animating = true;
+          }
+        });
+      });
+    </script>
+    <style>
+      #animatorBtn {
+        height: 50px;
+        width: 300px;
+      }
+
+      .divClass {
+        width: 10%;
+        height: 100px;
+        background-color: red;
+        position: relative;
+        
+      }
+
+      .animatorForward {
+        animation-name: animator1;
+        animation-duration: 1s;
+        animation-timing-function: ease-in;
+        animation-fill-mode: both;
+        animation-delay: 0s;
+      }
+      
+      .animatorBackward {
+        animation-name: animator2;
+        animation-duration: 1s;
+        animation-timing-function: ease-in;
+        animation-fill-mode: both;
+        animation-delay: 0s;
+      }
+
+      @keyframes animator1 {
+        from {
+          left: 0%;
+        }
+        to {
+          left: 90%;
+        }
+      }
+
+      @keyframes animator2 {
+        from {
+          left: 90%;
+        }
+        to {
+          left: 0%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <button id="animatorBtn">Start Animation</button>
+
+    <p>
+      By default, all HTML elements have a static position, and cannot be moved.
+      To manipulate the position, remember to first set the CSS position
+      property of the element to relative, fixed, or absolute!
+    </p>
+
+    <div class="divClass"></div>
+  </body>
+</html>

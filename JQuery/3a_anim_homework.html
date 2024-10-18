@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide Animation</title>
+    <style>
+        #animated-element {
+            position: absolute;
+            top: 10%;
+            left: 0;
+            width: 100px;
+            height: 100px;
+            background-color: #3498db;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <button id="toggleAnimation">Click Me</button>
+    <div id="animated-element"></div>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            var isAnimating = false;
+            var currentPosition = 0;
+            var originalPosition = 0;
+            var finalPosition = 0;
+
+            // Function to toggle the animation
+            function toggleAnimation() {
+                if (!isAnimating) {
+                    finalPosition = $(window).width() - $('#animated-element').width();
+                    $('#animated-element').animate({
+                        left: finalPosition
+                    }, 1000);
+                } else {
+                    $('#animated-element').stop(true, false);
+                    $('#animated-element').animate({
+                        left: originalPosition
+                    }, 1000);
+                }
+                isAnimating = !isAnimating;
+            }
+
+            // Store original position
+            originalPosition = $('#animated-element').position().left;
+            $('#toggleAnimation').click(function() {
+                toggleAnimation();
+            });
+        });
+    </script>
+</body>
+</html>

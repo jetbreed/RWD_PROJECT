@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script> -->
+    <script src="tailwindlib.js"></script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+      @layer components{
+        .profile-frame{
+          @apply inline-block h-[150px] w-[150px] rounded-full ring-2 ring-white
+        }
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <!-- This example requires some changes to your config: -->
+    <script>
+      tailwind.config.js;
+    </script>
+    <div
+      class="h-[100vh] bg-slate-600 flex justify-center items-center space-x-4"
+    >
+      <div class="flex -space-x-2 overflow-hidden">
+        <img
+          class="profile-frame"
+          src="images/2.jpg"
+          alt=""
+        />
+        <img
+          class="profile-frame"
+          src="images/3.jpg"
+          alt=""
+        />
+        <img
+          class="profile-frame"
+          src="images/4.jpg"
+          alt=""
+        />
+        <img
+          class="profile-frame"
+          src="images/9.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+  </body>
+</html>

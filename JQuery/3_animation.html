@@ -1,12 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script src="js/jquery-3.6.1.min.js"></script>
+<script src="js/jquery-updated.js"></script>
 <script> 
 $(document).ready(function(){
+  var now = true;
   $("button").click(function(){
-    $("div").animate({left: '250px'});
-  });
+    if(now)
+    {
+    $("div").animate({left: '90%'});
+    //$("div").slideUp(2000).slideDown(2000);
+    //$("div").animate({right: 'toggle'});
+    now = false;
+    console.log(now)
+    }
+    else if(now === false){
+      $("div").animate({right: 'toggle'});
+    }
+});
 });
 </script> 
 <style>
@@ -26,7 +37,7 @@ $(document).ready(function(){
   remember to first set the CSS position property 
   of the element to relative, fixed, or absolute!</p>
 
-<div style="background:#98bf21;
+<div style="width:10%; background:#98bf21;
   height:100px;width:100px;position:absolute;">
 </div>
 

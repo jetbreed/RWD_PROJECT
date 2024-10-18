@@ -1,19 +1,10 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<script src="js/jquery-3.6.1.min.js"></script>
-<script>
-$(document).ready(function(){
-  $("button").click(function(){
-    $("#p1")
-    .slideUp(2000)
-    .slideDown(2000)
-    .css("color", "white");
-  });
-});
-</script>
 <style>
-    #p1
+/**use class or tag selector**/  
+    .p2
     {
         background-color: red;   
         padding: 10px;
@@ -21,11 +12,27 @@ $(document).ready(function(){
         color: #fff;
         font-weight: bolder;
     }
+    .p1
+    {
+        background-color: green;   
+        color: yellow;
+    }
 </style>
+
+<script src="js/jquery-updated.js"></script>
+<script>
+
+  //Chained JQuery events or actions ...
+$(document).ready(function(){
+  $("button").click(function(){
+    $(".p2").slideToggle(2000).toggleClass("p1", 1000);
+  });
+});
+</script>
 </head>
 <body>
 
-<p id="p1">NIIT is fun!!</p>
+<p class="p2">NIIT is fun!!</p>
 
 <button>Click me</button>
 

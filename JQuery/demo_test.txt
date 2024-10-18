@@ -1,0 +1,15 @@
+<h1>
+<span style="font-size:40px; font-weight: bolder">
+    Faculty --- MR. JET
+</span>
+</h1>
+<hr/>
+<h3>
+<span id="p1" style="font-size:40px; font-weight: bolder">
+    NIIT IS GREAT WITH THE STUDENTS...
+    NIIT IS GREAT WITH THE STUDENTS...
+    NIIT IS GREAT WITH THE STUDENTS...
+    NIIT IS GREAT WITH THE STUDENTS...
+</span>
+</h3>
+<br/>

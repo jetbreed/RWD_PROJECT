@@ -1,0 +1,182 @@
+@keyframes animator1 {
+        0%   {background-color:white;}
+        100% {background-color:red; color:white;}
+      }
+      
+      @keyframes animator2 {
+        0%   {background-color:white;}
+        100% {background-color:yellow; color:white;}
+      }
+      
+      @keyframes animator2 {
+        0%   {background-color:white;}
+        100% {background-color:blue; color:white;}
+      }
+      
+      @keyframes animator3 {
+        0%   {background-color:white;}
+        100% {background-color:green; color:white;}
+      }
+      
+      @keyframes animator4 {
+        0%   {background-color:white;}
+        100% {background-color:#240A34; color:white;}
+      }
+      
+      @keyframes animator5 {
+        0%   {background-color:white;}
+        100% {background-color:#114232; color:white;}
+      }
+      
+      @keyframes animator6 {
+        0%   {background-color:white;}
+        100% {background-color:#6420AA; color:white;}
+      }
+      
+      @keyframes animator7 {
+        0%   {background-color:white;}
+        100% {background-color:#3C0753; color:white;}
+      }
+      
+      @keyframes animator8 {
+        0%   {background-color:white;}
+        100% {background-color:#A94438; color:white;}
+      }
+      
+      @keyframes animator9 {
+        0%   {background-color:white;}
+        100% {background-color:#7D0A0A; color:white;}
+      }
+      
+      @keyframes animator10 {
+        0%   {background-color:white;}
+        100% {background-color:#1B1A55; color:white;}
+      }
+      
+      @keyframes animator11 {
+        0%   {background-color:white;}
+        100% {background-color:#98ABEE; color:white;}
+      }
+      
+      @keyframes animator12 {
+        0%   {background-color:white;}
+        100% {background-color:#FF8911; color:white;}
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      @keyframes animator1 {
+        0%   {background-color:red;}
+        25%  {background-color:yellow;}
+        50%  {background-color:blue;}
+        75%  {background-color:green;}
+        100% {background-color:red; color:white;}
+      }
+      
+      @keyframes animator2 {
+        0%   {background-color:red;}
+        25%  {background-color:yellow;}
+        50%  {background-color:blue;}
+        75%  {background-color:green;}
+        100% {background-color:yellow; color:white;}
+      }
+      
+      @keyframes animator2 {
+        0%   {background-color:red;}
+        25%  {background-color:yellow;}
+        50%  {background-color:blue;}
+        75%  {background-color:green;}
+        100% {background-color:blue; color:white;}
+      }
+      
+      @keyframes animator3 {
+        0%   {background-color:red;}
+        25%  {background-color:yellow;}
+        50%  {background-color:blue;}
+        75%  {background-color:green;}
+        100% {background-color:green; color:white;}
+      }
+      
+      @keyframes animator4 {
+        0%   {background-color:red;}
+        25%  {background-color:yellow;}
+        50%  {background-color:blue;}
+        75%  {background-color:green;}
+        100% {background-color:#240A34; color:white;}
+      }
+      
+      @keyframes animator5 {
+        0%   {background-color:red;}
+        25%  {background-color:yellow;}
+        50%  {background-color:blue;}
+        75%  {background-color:green;}
+        100% {background-color:#114232; color:white;}
+      }
+      
+      @keyframes animator6 {
+        0%   {background-color:red;}
+        25%  {background-color:yellow;}
+        50%  {background-color:blue;}
+        75%  {background-color:green;}
+        100% {background-color:#6420AA; color:white;}
+      }
+      
+      @keyframes animator7 {
+        0%   {background-color:red;}
+        25%  {background-color:yellow;}
+        50%  {background-color:blue;}
+        75%  {background-color:green;}
+        100% {background-color:#3C0753; color:white;}
+      }
+      
+      @keyframes animator8 {
+        0%   {background-color:red;}
+        25%  {background-color:yellow;}
+        50%  {background-color:blue;}
+        75%  {background-color:green;}
+        100% {background-color:#A94438; color:white;}
+      }
+      
+      @keyframes animator9 {
+        0%   {background-color:red;}
+        25%  {background-color:yellow;}
+        50%  {background-color:blue;}
+        75%  {background-color:green;}
+        100% {background-color:#7D0A0A; color:white;}
+      }
+      
+      @keyframes animator10 {
+        0%   {background-color:red;}
+        25%  {background-color:yellow;}
+        50%  {background-color:blue;}
+        75%  {background-color:green;}
+        100% {background-color:#1B1A55; color:white;}
+      }
+      
+      @keyframes animator11 {
+        0%   {background-color:red;}
+        25%  {background-color:yellow;}
+        50%  {background-color:blue;}
+        75%  {background-color:green;}
+        100% {background-color:#98ABEE; color:white;}
+      }
+      
+      @keyframes animator12 {
+        0%   {background-color:red;}
+        25%  {background-color:yellow;}
+        50%  {background-color:blue;}
+        75%  {background-color:green;}
+        100% {background-color:#FF8911; color:white;}
+      }
